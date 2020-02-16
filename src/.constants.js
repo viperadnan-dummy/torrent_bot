@@ -10,7 +10,7 @@ module.exports = Object.freeze({
   GDRIVE_PARENT_DIR_ID:  '18PzcPMm1vpiXoHRMHtAuvTxFkuGSIKW_', // for directorty eg. https://drive.google.com/drive/folders/1p7pHhSh2yboWePmo53DnVr3xkAYiojP9 use 1p7pHhSh2yboWePmo53DnVr3xkAYiojP9
   SUDO_USERS: [999197022],	// Telegram user IDs. These users can use the bot in any chat. required, get it using https://t.me/YourTGid_Bot
   AUTHORIZED_CHATS: [-1001169286545],	// Telegram chat IDs. Anyone in these chats can use the bot. Add https://t.me/YourTGid_Bot to Group and click /id
-  STATUS_UPDATE_INTERVAL_MS: 12000, // A smaller number will update faster, but might cause rate limiting -leave as it is
+  STATUS_UPDATE_INTERVAL_MS: 1200, // A smaller number will update faster, but might cause rate limiting -leave as it is
   DRIVE_FILE_PRIVATE: {
     ENABLED: false,
     EMAILS: ['1@gmail.com', '2@gmail.com']
