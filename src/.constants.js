@@ -21,9 +21,9 @@ module.exports = Object.freeze({
     port: 80,
     path: '/botNotify'
   },
-    COMMANDS_USE_BOT_NAME: {
-      ENABLED: false,  // If true, all commands except '/list' has to have the bot username after the command.
-      NAME: "@" //Enter your Bot Username here if above is set to true.
+  COMMANDS_USE_BOT_NAME: {
+    ENABLED: false,  // If true, all commands except '/list' has to have the bot username after the command
+    NAME: "@nameOf_bot"
   },
   IS_TEAM_DRIVE: true
 });
