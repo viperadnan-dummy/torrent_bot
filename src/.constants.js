@@ -1,7 +1,7 @@
 module.exports = Object.freeze({
   TOKEN: '1046682158:AAEJgnN_fiKrBqeG6WzpkZ1F7UCMJk_xe64', //required
   ARIA_SECRET: 'bhadoo', //change as per needs.
-  ARIA_DOWNLOAD_LOCATION: '/app/downloads)', //-leave as it is
+  ARIA_DOWNLOAD_LOCATION: '/app/downloads', //-leave as it is
   INDEX_DOMAIN: 'https://com.kiodrive.workers.dev/', // replace with your index domain. use https://github.com/ParveenBhadooOfficial/go-drive
   ARIA_DOWNLOAD_LOCATION_ROOT: '/', //The mountpoint that contains ARIA_DOWNLOAD_LOCATION -leave as it is
   ARIA_FILTERED_DOMAINS: [], // Prevent downloading from URLs containing these substrings -leave as it is
