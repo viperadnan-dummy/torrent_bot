@@ -475,7 +475,7 @@ function ariaOnDownloadStop(gid: string, retry: number): void {
   var dlDetails = dlManager.getDownloadByGid(gid);
   if (dlDetails) {
     console.log(`${gid}: Stopped`);
-    var message = '<b>Download stopped 🗑</b>\n<b>Reason : </b> <code> Cancel By User</code>\n\n#Stopped';
+    var message = '<b>Download Stopped</b>\n<b>Reason : </b> <i> Cancel By User</i>';
     if (dlDetails.isDownloadAllowed === 0) {
       message += ' Blacklisted file name.';
     }
