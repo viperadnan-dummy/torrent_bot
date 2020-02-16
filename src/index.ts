@@ -319,7 +319,7 @@ function prepDownload(msg: TelegramBot.Message, match: string, isTar: boolean): 
  */
 
 function uriAdded(msg: TelegramBot.Message): any{
-  msgTools.sendMessage(bot, msg, 'Your URI Added Successfully ✅\n\nClick /mirrorstatus To Know Your URI Status  \n\n#mirror', -1);
+  msgTools.sendMessage(bot, msg, 'Your URI Added Successfully ✅\n\nClick /mirrorstatus To Know Your URI Status', -1);
 }
 
 /**
