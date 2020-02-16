@@ -586,7 +586,9 @@ function initAria2(): void {
   ariaTools.setOnDownloadError(ariaOnDownloadError);
 }
 
-function driveUploadCompleteCallback(err: string, gid: string, url: string, filePath: string, fileName: string, fileSize: number): void {
+function driveUploadCompleteCallback(err: string, gid: string, url: string, filePath: string,
+  fileName: string, fileSize: number, isFolder: boolean): void {
+
   var finalMessage;
   if (err) {
     var message = err;
@@ -606,6 +608,9 @@ function driveUploadCompleteCallback(err: string, gid: string, url: string, file
       finalMessage = `<b>File Upload Successfully. ☁️</b>\n\n<b>💾 File Name</b> : <code>${fileName}</code>\n\n<b>💽 Size</b> : ${fileSizeStr} \n\n<b>📤 GDrive Link</b> : ${url}\n\n<b>📥 Downloadable Link</b> : ${indexurl} \n\n<b>NB:</b>Do not Share Google Drive Link ⚠️ . To Share Only Downloadable Link\n\n#uploaded`;
     } else {
       finalMessage = `<b>File Upload Successfully. ☁️</b>\n\n<b>💾 File Name</b> : <code>${fileName}</code>\n\n<b>📤 GDrive Link</b> : ${url}\n\n<b>📥 Downloadable Link</b> : ${indexurl} \n\n<b>NB:</b> Do not Share Google Drive Link ⚠️ .To Share Only Downloadable Link\n\n#uploaded`;
+    }
+    if (constants.IS_TEAM_DRIVE && isFolder) {
+      finalMessage += '\n\n<i>Folders in Shared Drives can only be shared with members of the drive. Mirror as an archive if you need public links.</i>';
     }
     cleanupDownload(gid, finalMessage, url);
     }
