@@ -36,10 +36,10 @@ function setEventCallback(regexp: RegExp, regexpNoName: RegExp,
 setEventCallback(eventRegex.commandsRegex.start, eventRegex.commandsRegexNoName.start, (msg) => {
   if (msgTools.isAuthorized(msg) < 0) {
     // msgTools.sendUnauthorizedMessage(bot, msg);
-    msgTools.sendMessage(bot, msg, 'Welcome to @kltorrent_bot 🤖 .\n\nYou are not Authorized to use this bot Personaly.🚫\nJoin @Kltorrent For Access Me.\n\nVisit @kl_projects for more updates.', -1);
+    msgTools.sendMessage(bot, msg, 'Welcome to @kltorrent_bot 🤖 .\n\nYou are not Authorized to use this bot Personaly.🚫\nJoin @VIPERPUNK to use this bot.', -1);
   } else {
     msgTools.sendMessage(bot, msg,
-                         'Welcome to @kltorrent Group.\n\nVisit @kl_projects for more updates.\n\n#welcome',-1);
+                         'Welcome to VIPERCLOUD',-1);
   }
 });
 
