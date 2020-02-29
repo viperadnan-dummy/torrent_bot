@@ -2,7 +2,7 @@
 
 ## Set the variable below to your Aria password
 ARIA_RPC_SECRET="bhadoo"
-## This is the maximum number of download jobs that will be active at a time. Note that this does not affect the number of concurrent *uploads*
+## This is the maximum number of download jobs that will be active at a time. Note that this does not affect te number of concurrent *uploads*
 MAX_CONCURRENT_DOWNLOADS=10
 ## The port that RPC will listen on
 RPC_LISTEN_PORT=8210
